@@ -15,13 +15,17 @@ public class Main {
 	 * @param args the command line arguments
 	 */
 	public static void main(String[] args) {
+		operativa_cuenta();
+	}
+
+	private static void operativa_cuenta() {
 		// TODO code application logic here
 		CCuenta miCuenta;
 		double saldoActual;
 		
 		miCuenta = new CCuenta("Antonio López", "100-2365-85-1230456789", 2500, 0);
 		saldoActual = miCuenta.estado();
-		System.out.println("El saldo actual es " + saldoActual);
+		System.out.println("Hola" + miCuenta.getNombre() + "El saldo actual es " + saldoActual);
 		
 		try {
 			miCuenta.retirar(2300);
