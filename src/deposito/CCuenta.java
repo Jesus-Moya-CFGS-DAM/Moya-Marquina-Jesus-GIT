@@ -8,6 +8,7 @@ package deposito;
 /**
  *
  * @author Jesus Moya
+ * Visto
  */
 public class CCuenta {
 	private String nombre;
